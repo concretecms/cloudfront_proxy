@@ -24,7 +24,9 @@ final class CloudfrontServiceProvider extends Provider
     private function registerProxy()
     {
         $config = $this->app->make('config');
-        $ips = (array) array_merge($config['cloudfront_proxy::ips.user'], $config['concrete.security.trusted_proxies.ips']);
+        $ips = array_merge(
+            $config->get('cloudfront_proxy::ips.user', []), 
+            $config->get('concrete.security.trusted_proxies.ips', []));
 
         // Handle different symfony versions
         if (defined(SymphonyRequest::class . '::HEADER_X_FORWARDED_ALL')) {
