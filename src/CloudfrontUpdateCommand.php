@@ -2,6 +2,8 @@
 
 namespace Concrete5\Cloudfront;
 
+defined('C5_EXECUTE') or die('Access Denied.');
+
 use Concrete\Core\Application\Application;
 use Illuminate\Support\Arr;
 use Symfony\Component\Console\Command\Command;

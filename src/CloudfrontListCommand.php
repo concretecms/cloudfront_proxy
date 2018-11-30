@@ -2,6 +2,8 @@
 
 namespace Concrete5\Cloudfront;
 
+defined('C5_EXECUTE') or die('Access Denied.');
+
 use Concrete\Core\Application\Application;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

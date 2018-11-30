@@ -2,6 +2,8 @@
 
 namespace Concrete5\Cloudfront;
 
+defined('C5_EXECUTE') or die('Access Denied.');
+
 use Concrete\Core\Console\Application;
 use Concrete\Core\Foundation\Service\Provider;
 use Symfony\Component\HttpFoundation\Request;
