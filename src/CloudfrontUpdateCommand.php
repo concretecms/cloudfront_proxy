@@ -67,11 +67,11 @@ final class CloudfrontUpdateCommand extends Command
 
     /**
      * Get the IPs from a url service
-     * @param $urls
+     * @param array $urls
      * @param \Symfony\Component\Console\Output\OutputInterface $output
      * @return array
      */
-    private function getIps($urls, OutputInterface $output)
+    private function getIps(array $urls, OutputInterface $output)
     {
         $ips = [];
         foreach ($urls as $url) {
