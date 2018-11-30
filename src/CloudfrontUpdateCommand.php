@@ -93,7 +93,7 @@ final class CloudfrontUpdateCommand extends Command
 
     /**
      * Filter a list of IPs down to just cloudfront IPs
-     * This works with the main ip-ranges endpoint to resolve only clodufront ips
+     * This works with the main ip-ranges endpoint to resolve only cloudfront ips
      *
      * @param array $data
      * @return \Generator
@@ -111,7 +111,7 @@ final class CloudfrontUpdateCommand extends Command
 
     private function shouldApplyChanges(InputInterface $input, OutputInterface $output, array $ips, array $oldIps)
     {
-        // There is no difference between the two arrays
+        // No IPs were found
         if (!$ips) {
             $output->writeln('No IPs were found.');
             return false;
