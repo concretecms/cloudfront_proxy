@@ -2,11 +2,12 @@
 
 namespace Concrete5\Cloudfront;
 
+defined('C5_EXECUTE') or die('Access Denied.');
+
 use Concrete\Core\Application\Application;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Question\ConfirmationQuestion;
 
 final class CloudfrontListCommand extends Command
 {

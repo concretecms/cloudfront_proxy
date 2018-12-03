@@ -2,6 +2,8 @@
 
 namespace Concrete\Package\CloudfrontProxy;
 
+defined('C5_EXECUTE') or die('Access Denied.');
+
 use Concrete\Core\Foundation\Psr4ClassLoader;
 use Concrete\Core\Package\Package;
 use Concrete5\Cloudfront\CloudfrontServiceProvider;
