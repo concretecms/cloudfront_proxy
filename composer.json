@@ -1,5 +1,5 @@
 {
-    "name": "concrete5/cloudfront_proxy",
+    "name": "concretecms/cloudfront_proxy",
     "description": "concrete5 package to enable cloudfront IPs as trusted proxies.",
     "type": "concrete5-package",
     "license": "MIT",
